@@ -21,7 +21,7 @@ class Blog extends \Eloquent {
         return self::where('id', '<', $this->id)->where('public', 1)->orderBy('id','desc')->take(1)->get()->first();
     }
     
-    public static  function lastPosts($number) {
+    public static  function lastPosts($number = 10) {
 
         return self::orderBy('created_at','desc')->where('public', 1)
                 ->simplePaginate($number);

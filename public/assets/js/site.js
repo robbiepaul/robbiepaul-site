@@ -33,7 +33,7 @@ $(window).bind('scroll',parallaxScroll);
 
     var show = false;
     var w = ($(window).width() / 2)-50;
-    var h = $(window).height()- 300;
+    var h = ($(window).height() * 0.95)-200;
     var nbb = 70;
     var $document = $(document);
     $('#menu').bind('click', function(e){
@@ -47,11 +47,16 @@ $(window).bind('scroll',parallaxScroll);
     var $topMenu = $('#topMenuArea ul.nav');
 
     function showTopMenu() {
-        if($document.width() > 768) {
+        if(! isMobileDevice()) {
             $topMenu.show().delay(500).fadeTo(1000, 1);
         } else {
             $topMenu.hide();
         }
+    }
+
+    function isMobileDevice()
+    {
+        return $document.width() <= 768
     }
 
     showTopMenu();
@@ -125,8 +130,9 @@ $(window).bind('scroll',parallaxScroll);
     }
     function expand() {
                 show = false;
+                var logoWidth = isMobileDevice() ? 100 : 200;
                 $('.navbar-wrapper .navbar ').css({ height:'auto' }).transition({ paddingTop: '0px',paddingBottom: '0', opacity:'1'}).find('#menu').find('i').eq(1).transition({x:'0px'}).end().eq(0).delay(200).transition({x:'0px'}).end().eq(2).delay(400).transition({x:'0px'});
-                $('#lgo').transition({x:'0'}).transition({ width:'200px',height:'200px'});
+                $('#lgo').transition({x:'0'}).transition({ width:logoWidth+'px',height:logoWidth+'px'});
                 $('.navbar-brand').transition({x:'0px'}).transition({y:'0px'}).transition({opacity:'1'}).find('span').transition({opacity:'1'});
                 $('.og-open').delay(100).transition({x:'0px'});
                 showTopMenu();

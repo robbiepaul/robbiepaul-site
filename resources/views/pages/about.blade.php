@@ -17,9 +17,9 @@
                     <p>I'm a problem solver, code writer and keyboard breaker. Through constructing well thought-out systems and processes, effectively communicating business needs while taking in to consideration the end user's experience.</p>
                     <p>Some people are designers, some people are developers. In order to create the best applications it's essential to be good at both. Understanding both sides enables me to see the big picture and make great websites.</p>
                     <h2>Background</h2>
-                    <p>I created my first ever website back in 1996 on Tripod, I taught myself HTML by viewing the source of websites and deconstructing the markup. It was the "internet boom" days and I landed a job at a company called <em>5-Online</em> as a <em>Junior Web Designer</em> when I was 16. </p>
+                    <p>I created my first ever website back in 1996 on Tripod. I taught myself HTML by viewing the source of websites and deconstructing the markup. It was the days of the "internet bubble" and I landed a job at a company called <em>5-Online</em> as a <em>Junior Web Designer</em> when I was 16. </p>
                     <p>After a valuable year in the industry I left to pursue college and university. In 2010 I started work as a <em>Developer</em> for now defunct UK charity <em>Film Education</em>. Whilst working at <em>Film Education</em> I contributed to several national <a href="/projects">projects</a>.</p>
-                    <p>I'm now <em>Head of Technology</em> at <em>Moshel Ltd</em>. We've just launched an exciting new website <a href="https://morethanabusinesscard.com">More than a business card</a>.</p>
+                    <p>I'm now <em>Head of Technology</em> at <em>Moshel Ltd</em>. We've just launched an exciting new website, <a href="https://morethanabusinesscard.com">More than a business card</a>.</p>
                     <p class="call_to_action">
                         <a href="/skills" class="read-more">Take a look at my skills →</a>
                     </p>

@@ -11,6 +11,7 @@
 
     <link href="/dist/css/bootstrap.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.css" rel="stylesheet">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="/assets/js/html5shiv.js"></script>
@@ -90,11 +91,11 @@
                     <div class="col-md-4">
                         <h4 class="foot-title">Social</h4>
                         <ul class="nav-links">
-                           <li><a href="http://www.facebook.com/robbiepaul">Facebook</a></li>
-                           <li><a href="http://www.twitter.com/robbiepaulco">Twitter</a></li>
-                           <li><a href="http://uk.linkedin.com/in/robbiepaul/">LinkedIn</a></li>
-                           <li><a href="https://github.com/robbiepaul">GitHub</a></li>
-                           <li><a href="http://stackoverflow.com/users/942846/robbiep">StackOverflow</a></li>
+                           <li><a href="http://www.facebook.com/robbiepaul" target="_blank">Facebook</a></li>
+                           <li><a href="http://www.twitter.com/robbiepaulco" target="_blank">Twitter</a></li>
+                           <li><a href="http://uk.linkedin.com/in/robbiepaul/" target="_blank">LinkedIn</a></li>
+                           <li><a href="https://github.com/robbiepaul" target="_blank">GitHub</a></li>
+                           <li><a href="http://stackoverflow.com/users/942846/robbiep" target="_blank">StackOverflow</a></li>
 
                         </ul>
                     </div>

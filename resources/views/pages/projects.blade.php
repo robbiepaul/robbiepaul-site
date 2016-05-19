@@ -32,7 +32,7 @@
                    						</a>
                    					</li>
 								   <li>
-									   <a href="#" data-largesrc="/images/projects/noden-full.png" data-title="Noden Guitars DB" data-description="<h6 class='date-posted'><span class='text-muted'>Date</span> March 2015</h6><p><em>Database for Guitar repair workshop</em></p><p>I designed and built this database for a friend's business using Laravel and AngularJS.</p><p>It lets him log incoming jobs, see due jobs, issue invoices, send SMS notifications, enables his employees to track how much time they spend on each job.</p>" class="thumbImg">
+									   <a href="#" data-largesrc="/images/projects/noden-full.png" data-title="Noden Guitars DB" data-description="<h6 class='date-posted'><span class='text-muted'>Date</span> March 2016</h6><p><em>Database for Guitar repair workshop</em></p><p>I designed and built this database for a friend's business using Laravel and AngularJS.</p><p>It lets him log incoming jobs, see due jobs, issue invoices, send SMS notifications, enables his employees to track how much time they spend on each job.</p><p>Noden Guitars DB v2.0 is still work in progress</p>" class="thumbImg">
 										   <img src="/images/projects/noden-thumb.png" alt="">
 									   </a>
 								   </li>

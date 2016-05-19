@@ -44,6 +44,12 @@ class PagesController extends Controller {
 
 		\Log::info($request->all());
 
+		if($request->input('newsletter', 0) == 1) {
+			\Mailgun::lists()->addMember('updates@robbiepaul.co', [
+				'address' => $request->input('email')
+			]);
+		}
+
 		return view('pages.thanks');
 	}
 
@@ -54,6 +60,10 @@ class PagesController extends Controller {
 		]);
 
 		\Log::info($request->all());
+
+		\Mailgun::lists()->addMember('updates@robbiepaul.co', [
+			'address' => $request->input('email')
+		]);
 
 		return view('pages.thanks');
 	}

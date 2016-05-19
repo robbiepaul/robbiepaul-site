@@ -311,7 +311,7 @@ a {
 #footer .nav-links a {
   color:#9BB7CA;
   padding: 5px 0;
-  display: block;
+  display: inline-block;
   letter-spacing: 2px;
   font-size: 1em;
 }
@@ -325,7 +325,15 @@ a {
 #recentPosts {
   margin-bottom:6em;
 }
-
+label {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 0.2em;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 300;
+  color:#888;
+}
 .subscribe-text::-webkit-input-placeholder { /* WebKit browsers */
   color: #45607c;
 }
@@ -738,6 +746,22 @@ a {
   border-color: #8AB7DB;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+a[target="_blank"]:after {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: normal;
+  content: '\e064';
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 7px;
+  margin-left: 4px;
+  margin-right: 6px;
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {

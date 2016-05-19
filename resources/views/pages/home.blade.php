@@ -2,11 +2,11 @@
 
 @section('content')
 
-    @include('layouts.partials.carousel', ['title' => 'Passionate about the web', 'tagline' => 'I love what I do&#8212; I\'m always working on a side project or learning a new skill. Web technologies are constantly changing and it\'s important to stay one-step-ahead.', 'image'=>'/images/slide1.jpg'])
+    @include('layouts.partials.carousel', ['title' => 'Passionate about the web', 'tagline' => 'I love what I do&#8212; I\'m always working on a side project or learning a new skill. Web technologies are constantly changing and it\'s important to stay one step ahead.', 'image'=>'/images/slide1.jpg'])
 
     <div class="marketing">
 
-      <div class="row" id="marketingPoints">
+      <div class="" id="marketingPoints">
           <div class=" container">
             <div class="col-lg-4">
               <div class="img-circle icon-bg"><img src="images/icons/code.png" alt="Coding icon" style='max-width: 50px'></div>
@@ -32,7 +32,7 @@
           <div id="recentPosts">
                 <h1 class="section-title">Recent blog posts</h1>
 
-
+@if(!empty($last))
                 @foreach($last as $post)
                   <article class="row blog-post">
                       <div class="col-lg-4">
@@ -52,9 +52,14 @@
                   </article>
 
                 @endforeach
-              <p class="pjax">
-                <a href="/blog" class="see-more">Show all posts</a>
-              </p>
+                    <p class="pjax">
+                        <a href="/blog" class="see-more">Show all posts</a>
+                    </p>
+              @else
+                <p><em>No posts yet</em></p>
+
+    @endif
+
           </div>
     </div>
 

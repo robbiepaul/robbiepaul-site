@@ -157,7 +157,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         'Serverfireteam\Blog\BlogServiceProvider',
-        'AdamWathan\BootForms\BootFormsServiceProvider'
+        'AdamWathan\BootForms\BootFormsServiceProvider',
+        Bogardo\Mailgun\MailgunServiceProvider::class,
 
     ],
 
@@ -204,7 +205,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'BootForm' => 'AdamWathan\BootForms\Facades\BootForm'
+        'BootForm' => 'AdamWathan\BootForms\Facades\BootForm',
+        'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class
 
     ],
 
