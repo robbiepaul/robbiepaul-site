@@ -87,8 +87,8 @@ h1, h2 {
 }
 
 .marketing {
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 0;
+  padding-right: 0; }
   .marketing .col-lg-4 {
     text-align: center;
     margin-bottom: 20px; }
@@ -258,7 +258,18 @@ h1, h2 {
     background-color: #3B5998 !important;
     color: #fff !important;
     text-decoration: none; }
+  #socialLinks .github-si a {
+    background-color: #dcdcdc !important;
+    color: rgba(47, 47, 47, 1) !important;
+    text-decoration: none; }
+  #socialLinks .stackoverflow-si a {
+    background-color: #F48024 !important;
+    color: #fff !important;
+    text-decoration: none; }
 
+.text-small .control-label {
+  font-size: 14px;
+}
 #mainMenu {
   position: relative; }
   #mainMenu li {
@@ -592,7 +603,12 @@ label {
   margin:0;
   margin-top:30px;
 }
-
+.read-more:hover {
+  color: #fff;
+  border: 1px solid #999;
+  background-color: #999;
+  text-decoration: none;
+}
 .tags {
   font-size: 14px;
   font-weight: 100;
@@ -630,7 +646,7 @@ label {
   font-size: 1.2em;
 }
 .skills-ul .progress {
-  height:4px;
+  height:1px;
 }
 .subsection-heading {
   border-bottom: 1px solid #e0e0e0;
@@ -710,10 +726,12 @@ label {
 }
 
 
-
+.progress-bar-success {
+  background-color: #78DC78;
+}
 .pager li > a, .pager li > span {
-  padding: 0px 15px;
-  font-size: 3em;
+  padding: 0px 13px;
+  font-size: 2em;
 }
 
 .navbar-fixed-top:hover {
@@ -758,16 +776,21 @@ a[target="_blank"]:after {
   content: '\e064';
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  font-size: 7px;
+  font-size: 0.42em;
   margin-left: 4px;
   margin-right: 6px;
   opacity: 0.6;
 }
-
+#socialLinks {
+  bottom:140px;
+}
 @media (min-width: 768px) {
   /* Remove the edge padding needed for mobile */
   #topMenuArea ul.nav {
     display: none;
+  }
+  #socialLinks {
+    bottom:0;
   }
   .marketing {
     padding-left: 0;
@@ -790,6 +813,6 @@ a[target="_blank"]:after {
   #footer .col-md-4 {
     margin-bottom:30px;
   }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
    }

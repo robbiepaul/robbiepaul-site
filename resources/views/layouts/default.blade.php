@@ -62,8 +62,9 @@
                            <ul class="socialIcons">
                                <li class="facebook-si"><a href="http://www.facebook.com/robbiepaul"><i class="icon-facebook"></i></a></li>
                                <li class="twitter-si"><a href="http://www.twitter.com/robbiepaulco"><i class="icon-twitter"></i></a></li>
-
                                <li class="linkedin-si"><a href="http://uk.linkedin.com/in/robbiepaul/"><i class="icon-linkedin"></i></a></li>
+                               <li class="github-si"><a href="https://github.com/robbiepaul"><i class="icon-github"></i></a></li>
+                               <li class="stackoverflow-si"><a href="http://stackoverflow.com/users/942846/robbiep"><i class="icon-stackexchange"></i></a></li>
                            </ul>
 
                         </div>

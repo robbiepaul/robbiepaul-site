@@ -33,7 +33,7 @@ $(window).bind('scroll',parallaxScroll);
 
     var show = false;
     var w = ($(window).width() / 2)-50;
-    var h = ($(window).height() * 0.95)-200;
+    var h = isMobileDevice() ? $(window).height() : ($(window).height() * 0.95)-200;
     var nbb = 70;
     var $document = $(document);
     $('#menu').bind('click', function(e){
@@ -56,7 +56,7 @@ $(window).bind('scroll',parallaxScroll);
 
     function isMobileDevice()
     {
-        return $document.width() <= 768
+        return $(document).width() <= 667
     }
 
     showTopMenu();
@@ -130,7 +130,7 @@ $(window).bind('scroll',parallaxScroll);
     }
     function expand() {
                 show = false;
-                var logoWidth = isMobileDevice() ? 100 : 200;
+                var logoWidth = isMobileDevice() ? 80 : 200;
                 $('.navbar-wrapper .navbar ').css({ height:'auto' }).transition({ paddingTop: '0px',paddingBottom: '0', opacity:'1'}).find('#menu').find('i').eq(1).transition({x:'0px'}).end().eq(0).delay(200).transition({x:'0px'}).end().eq(2).delay(400).transition({x:'0px'});
                 $('#lgo').transition({x:'0'}).transition({ width:logoWidth+'px',height:logoWidth+'px'});
                 $('.navbar-brand').transition({x:'0px'}).transition({y:'0px'}).transition({opacity:'1'}).find('span').transition({opacity:'1'});

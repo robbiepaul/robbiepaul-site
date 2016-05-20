@@ -17,7 +17,9 @@
                     {!! BootForm::text('Email', 'email') !!}
                     {!! BootForm::text('Phone number', 'phone') !!}
                     {!! BootForm::textarea('Message', 'message') !!}
+                    <div class="text-small">
                     {!! BootForm::checkbox('Subscribe to updates', 'newsletter') !!}
+                    </div>
                     {!! BootForm::submit('Send message', 'read-more') !!}
                     {!! BootForm::close() !!}
 

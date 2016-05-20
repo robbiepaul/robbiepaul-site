@@ -49,6 +49,10 @@
 								   </li>
 
                    				</ul>
+
+								<p class="call_to_action pjax text-center">
+									<a href="/contact" class="read-more">Get in touch with me →</a>
+								</p>
                      
 
                 </div>
