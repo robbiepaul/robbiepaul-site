@@ -5,7 +5,7 @@
     @include('layouts.partials.carousel', [
         'title' => 'About me',
         'tagline' => "I'm a $age year old full stack web developer based in London, England",
-        'image' => '/images/me_beach.jpg' ])
+        'image' => '/build/images/me_beach.jpg' ])
 
     <div id="page-content">
 
@@ -25,7 +25,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" src="/images/about1.png" alt="coding" style="margin-top:55px" />
+                    <img class="img-responsive" src="/build/images/about1.png" alt="coding" style="margin-top:55px" />
                     <aside class="text-muted bg-info center-block" id="aboutme-info" style="">
                         <h4 class="subsection-heading">Certifications</h4>
                         <ul>

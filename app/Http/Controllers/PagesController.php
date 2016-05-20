@@ -39,14 +39,24 @@ class PagesController extends Controller {
 		$this->validate($request, [
 			'name' => 'required',
 			'email' => 'required|email',
-			'message' => 'required',
+			'msg' => 'required',
 		]);
 
 		\Log::info($request->all());
 
+		$data = $request->except('_token');
+		$data['subject'] = 'Contact request';
+		$data['phone'] = isset($data['phone']) ? $data['phone'] : 'n/a';
+		$data['ip'] = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : 'unknown';
+
+		\Mailgun::later(5, 'emails.contact', $data, function($message) use ($data)
+		{
+			$message->to('robbiepaul@me.com', 'Robbie Paul')->subject($data['subject']);
+		});
+
 		if($request->input('newsletter', 0) == 1) {
 			\Mailgun::lists()->addMember('updates@robbiepaul.co', [
-				'address' => $request->input('email')
+				'address' => $data['email']
 			]);
 		}
 

@@ -9,22 +9,16 @@
 
     <title>Robbie Paul</title>
 
-    <link href="/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/font-awesome.css" rel="stylesheet">
-    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="/assets/js/html5shiv.js"></script>
       <script src="/assets/js/respond.min.js"></script>
     <![endif]-->
-    <link href="/assets/css/ogrid.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/js/vendor/jquery-pjax/jquery.pjax.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="/assets/js/jquery.transit.min.js"></script>
-    <script src="/assets/js/modernizr.custom.js"></script>
-    <script src="/assets/js/jquery.goup.min.js"></script>
+
+    <link href="/build/css/everything.css" rel="stylesheet">
+
+
   </head>
   <body>
        <div class="navbar-wrapper">
@@ -33,7 +27,7 @@
                <div class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                        <div class="navbar-header">
-                           <img src="/images/logo.png" id="lgo" />
+                           <img src="/build/images/logo.png" id="lgo" />
 
                            <a class="navbar-brand" href="/">Robbie Paul<br/><span><span class="brand_design">Design</span> + <span class="brand_development">Development</span></span></a>
                            <button type="button" class="navbar-btn" id="menu">
@@ -121,8 +115,8 @@
 
     <script type="text/javascript" src="//use.typekit.net/try7qcn.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script type="text/javascript" src="/assets/js/grid.js"></script>
-    <script type="text/javascript" src="/assets/js/site.js"></script>
+
+    <script type="text/javascript" src="/build/js/everything.js"></script>
 
 </body>
 </html>

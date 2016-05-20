@@ -4,7 +4,7 @@
     @include('layouts.partials.carousel', [
             'title' => 'Thanks',
             'tagline' => null,
-            'image' => '/images/slide5.jpg' ])
+            'image' => '/build/images/slide5.jpg' ])
 
     <div id="page-content">
 

@@ -22,7 +22,7 @@
 
 
     <script src="js/libs/grid/modernizr.custom.js"></script>
-    <script src="js/libs/grid/imagesloaded.pkgd.min.js"></script>
+    <script src="js/libs/grid/build/imagesloaded.pkgd.min.js"></script>
     <script src="js/libs/grid/masonry.pkgd.min.js"></script>
     <script src="js/libs/grid/classie.js"></script>
     <script src="js/libs/grid/cbpGridGallery.js"></script>

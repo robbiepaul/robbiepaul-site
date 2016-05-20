@@ -5,7 +5,7 @@
     @include('layouts.partials.carousel', [
         'title' => 'Skills',
         'tagline' => 'Always learning and improving',
-        'image' => '/images/slide4.jpg' ])
+        'image' => '/build/images/slide4.jpg' ])
 
     <div id="page-content" class="skills-page">
 
@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="call_to_action text-right">
-                            <a href="/cv.pdf" class="read-more">Download my latest CV →</a>
+                            <a href="/cv.pdf" class="read-more" target="_blank">Download my latest CV</a>
                         </p>
                     </div>
                 </div>

@@ -4,7 +4,7 @@
     @include('layouts.partials.carousel', [
         'title' => 'Contact me',
         'tagline' => "Get in touch, it would be nice to hear from you",
-        'image' => '/images/slide5.jpg' ])
+        'image' => '/build/images/slide5.jpg' ])
 
     <div id="page-content">
 
@@ -16,7 +16,7 @@
                     {!! BootForm::text('Name', 'name') !!}
                     {!! BootForm::text('Email', 'email') !!}
                     {!! BootForm::text('Phone number', 'phone') !!}
-                    {!! BootForm::textarea('Message', 'message') !!}
+                    {!! BootForm::textarea('Message', 'msg') !!}
                     <div class="text-small">
                     {!! BootForm::checkbox('Subscribe to updates', 'newsletter') !!}
                     </div>
