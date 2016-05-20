@@ -3,11 +3,13 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use SEO;
 
 class PagesController extends Controller {
 
 	public function index()
 	{
+
 		$last = \App\Blog::lastPosts(2);
 		return view('pages.home', compact('last'));
 	}

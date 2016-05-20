@@ -159,6 +159,7 @@ return [
         'Serverfireteam\Blog\BlogServiceProvider',
         'AdamWathan\BootForms\BootFormsServiceProvider',
         Bogardo\Mailgun\MailgunServiceProvider::class,
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
 
     ],
 
@@ -206,7 +207,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'BootForm' => 'AdamWathan\BootForms\Facades\BootForm',
-        'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class
+        'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class,
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
     ],
 
