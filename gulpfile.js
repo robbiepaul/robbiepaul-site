@@ -24,6 +24,7 @@ elixir(function(mix) {
         'bootstrap.min.css',
         'font-awesome.min.css',
         'open-iconic-bootstrap.min.css',
+        'awesome-bootstrap-checkbox.css',
         'ogrid.css',
         'styles.css',
 

@@ -1,0 +1,49 @@
+<?php
+
+return [
+    'meta'      => [
+        /*
+         * The default configurations to be used by the meta generator.
+         */
+        'defaults'       => [
+            'title'        => "Robbie Paul", // set false to total remove
+            'description'  => 'The life and work of Robbie Paul', // set false to total remove
+            'separator'    => ' - ',
+            'keywords'     => ['robbie paul', 'developer', 'php'],
+            'canonical'    => null, // Set null for using Url::current(), set false to total remove
+        ],
+
+        /*
+         * Webmaster tags are always added.
+         */
+        'webmaster_tags' => [
+            'google'    => null,
+            'bing'      => null,
+            'alexa'     => null,
+            'pinterest' => null,
+            'yandex'    => null,
+        ],
+    ],
+    'opengraph' => [
+        /*
+         * The default configurations to be used by the opengraph generator.
+         */
+        'defaults' => [
+            'title'        => "Robbie Paul", // set false to total remove
+            'description'  => 'The life and work of Robbie Paul', // set false to total remove
+            'url'         => 'https://robbiepaul.co',
+            'type'        => 'website',
+            'site_name'   => 'Robbie Paul',
+            'images'      => [],
+        ],
+    ],
+    'twitter' => [
+        /*
+         * The default values to be used by the twitter cards generator.
+         */
+        'defaults' => [
+          'card'        => 'summary',
+          'site'        => '@robbiepaulco',
+        ],
+    ],
+];

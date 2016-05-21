@@ -13,12 +13,18 @@
 
                 <div class="col-md-6 col-md-offset-3">
                     {!! BootForm::open()->action('/contact') !!}
-                    {!! BootForm::text('Name', 'name') !!}
-                    {!! BootForm::text('Email', 'email') !!}
+                    {!! BootForm::text('Name', 'name')->required()->labelClass('required') !!}
+                    {!! BootForm::text('Email', 'email')->required()->labelClass('required') !!}
                     {!! BootForm::text('Phone number', 'phone') !!}
-                    {!! BootForm::textarea('Message', 'msg') !!}
+                    {!! BootForm::textarea('Message', 'msg')->required()->labelClass('required') !!}
                     <div class="text-small">
-                    {!! BootForm::checkbox('Subscribe to updates', 'newsletter') !!}
+                    {{--{!! BootForm::checkbox('Subscribe to updates', 'newsletter') !!}--}}
+                        <div class="checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">
+                                Subscribe to updates
+                            </label>
+                        </div>
                     </div>
                     {!! BootForm::submit('Send message', 'read-more') !!}
                     {!! BootForm::close() !!}

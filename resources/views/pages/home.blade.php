@@ -4,30 +4,32 @@
 
     @include('layouts.partials.carousel', ['title' => 'Passionate about the web', 'tagline' => 'I love what I do&#8212; I\'m always working on a side project or learning a new skill. Web technologies are constantly changing and it\'s important to stay one step ahead.', 'image'=>'/build/images/slide1.jpg'])
 
-    <div class="marketing">
+    {{--<div class="marketing">--}}
 
-      <div class="" id="marketingPoints">
-          <div class=" container">
-            <div class="col-lg-4">
-              <div class="img-circle icon-bg"><img src="/build/images/icons/code.png" alt="Coding icon" style='max-width: 50px'></div>
-              <h2>Coding</h2>
+      {{--<div class="" id="marketingPoints">--}}
+          {{--<div class=" container">--}}
+            {{--<div class="col-lg-4">--}}
+              {{--<div class="img-circle icon-bg"><img src="/build/images/icons/code.png" alt="Coding icon" style='max-width: 50px'></div>--}}
+              {{--<h2>Coding</h2>--}}
 
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="img-circle icon-bg"><img src="/build/images/icons/ui.png" alt="UI Design icon" style='max-width: 50px'></div>
-              <h2>Design</h2>
+            {{--</div><!-- /.col-lg-4 -->--}}
+            {{--<div class="col-lg-4">--}}
+              {{--<div class="img-circle icon-bg"><img src="/build/images/icons/ui.png" alt="UI Design icon" style='max-width: 50px'></div>--}}
+              {{--<h2>Design</h2>--}}
 
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="img-circle icon-bg"><img src="/build/images/icons/data.png" alt="Architecture icon" style='max-width: 50px'></div>
-              <h2>Architecture</h2>
+            {{--</div><!-- /.col-lg-4 -->--}}
+            {{--<div class="col-lg-4">--}}
+              {{--<div class="img-circle icon-bg"><img src="/build/images/icons/data.png" alt="Architecture icon" style='max-width: 50px'></div>--}}
+              {{--<h2>Architecture</h2>--}}
 
 
-            </div>
-          </div>
-      </div>
+            {{--</div>--}}
+          {{--</div>--}}
+      {{--</div>--}}
 
-      </div>
+      {{--</div>--}}
+
+
       <div class="container">
           <div id="recentPosts">
                 <h1 class="section-title">Recent blog posts</h1>
