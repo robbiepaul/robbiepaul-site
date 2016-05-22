@@ -177,5 +177,6 @@ $(function() {
 
     });
     $.goup();
+    jQuery('article.post-content').find('a').attr('target', '_blank');
 });
 
