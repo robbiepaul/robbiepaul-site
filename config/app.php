@@ -161,7 +161,8 @@ return [
         Bogardo\Mailgun\MailgunServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         'RobBrazier\Piwik\PiwikServiceProvider',
-        Intervention\Image\ImageServiceProvider::class
+        Intervention\Image\ImageServiceProvider::class,
+        DraperStudio\Parsedown\ServiceProvider::class
     ],
 
     /*
@@ -213,6 +214,7 @@ return [
         'Piwik' => 'RobBrazier\Piwik\Facades\Piwik',
         'Image' => Intervention\Image\Facades\Image::class,
         'SEOMeta'   => Artesaos\SEOTools\Facades\SEOMeta::class,
+        'Markdown' => DraperStudio\Parsedown\Facades\Parsedown::class
     ],
 
 ];

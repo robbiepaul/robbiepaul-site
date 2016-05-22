@@ -787,6 +787,11 @@ article pre {
   border: none !important;
 }
 
+article pre code {
+  margin: 20px 0 40px;
+}
+
+
 .form-control:focus {
   border-color: #8AB7DB;
   -webkit-box-shadow: none;
@@ -817,6 +822,13 @@ a[target="_blank"]:after {
   border-bottom: 1px dashed  rgba(0,0,0,0.1);
   display: block;
 
+}
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  background: rgba(34, 33, 41, 0.92);
+  color: #e6e1dc;
 }
 @media (min-width: 768px) {
   /* Remove the edge padding needed for mobile */

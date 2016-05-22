@@ -51,7 +51,7 @@ class BlogController extends BaseController {
             if($post == NULL){
                 App::abort(404);
             }
-            $description = str_limit(strip_tags($post->content));
+            $description = str_limit(strip_tags($post->html));
 
             SEO::setTitle($post->title);
             SEO::setDescription($description);

@@ -16,6 +16,11 @@ class Blog extends \Eloquent {
         return $this->getUrl();
     }
 
+    public function getHtmlAttribute()
+    {
+        return \Markdown::text($this->content);
+    }
+
     public function getThumbAttribute()
     {
         $nameArray = explode('.', $this->image);
