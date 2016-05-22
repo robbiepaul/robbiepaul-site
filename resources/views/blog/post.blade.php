@@ -23,7 +23,7 @@
             @endif
 
             @if($post->previousPost())
-            <a class="pull-left read-more" href="{{$post->previousPost()->getUrl()}}" title="{{$post->nextPost()['title']}}">
+            <a class="pull-left read-more" href="{{$post->previousPost()->getUrl()}}" title="{{$post->previousPost()['title']}}">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous : {{ str_limit($post->previousPost()['title'], 40)}}
             </a>
             @endif

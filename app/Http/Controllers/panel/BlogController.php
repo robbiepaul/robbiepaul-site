@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers\blog\panel;
+<?php namespace App\Http\Controllers\panel;
 
 use Serverfireteam\Panel\CrudController;
 use \Illuminate\Routing\Controllers;
@@ -19,6 +19,7 @@ class BlogController extends \Serverfireteam\Panel\CrudController {
         $this->grid = \DataGrid::source($this->filter);
         $this->grid->add('id', 'ID', true)->style("width:100px");
         $this->grid->add('title', 'title');
+        $this->grid->add('thumb', 'url');
         $this->grid->add('socialPoint', 'social Point');
         $this->addStylesToGrid();
 
@@ -33,10 +34,10 @@ class BlogController extends \Serverfireteam\Panel\CrudController {
 
         $this->edit->label('Edit Project');
         $this->edit->add('title', 'post title', 'text')->rule('required|min:3');
-        $this->edit->add('author', 'author', 'text')->rule('required|min:2');
+        //$this->edit->add('author', 'author', 'text')->rule('required|min:2');
         $this->edit->add('content', 'content', 'redactor')->rule('required');
         $this->edit->add('image', 'image', 'image')->move('uploads/');
-        $this->edit->add('color', 'Color', 'colorpicker');
+        //$this->edit->add('color', 'Color', 'colorpicker');
         $this->edit->add('public', 'public', 'radiogroup')->option(0, 'Draft')->option(1, 'Ready');
 
         return $this->returnEditView();

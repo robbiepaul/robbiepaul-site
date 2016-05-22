@@ -211,7 +211,8 @@ return [
         'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class,
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
         'Piwik' => 'RobBrazier\Piwik\Facades\Piwik',
-        'Image' => Intervention\Image\Facades\Image::class
+        'Image' => Intervention\Image\Facades\Image::class,
+        'SEOMeta'   => Artesaos\SEOTools\Facades\SEOMeta::class,
     ],
 
 ];

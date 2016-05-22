@@ -29,8 +29,8 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'        => "Robbie Paul", // set false to total remove
-            'description'  => 'The life and work of Robbie Paul', // set false to total remove
+            'title'        => false, // set false to total remove
+            'description'  => false, // set false to total remove
             'url'         => 'https://robbiepaul.co',
             'type'        => 'website',
             'site_name'   => 'Robbie Paul',

@@ -3,6 +3,8 @@
 use Illuminate\Foundation\Bus\DispatchesCommands;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use SEOMeta;
+use SEO;
 
 class BlogController extends BaseController {
 
@@ -44,6 +46,22 @@ class BlogController extends BaseController {
             if($post == NULL){
                 App::abort(404);
             }
+            $description = str_limit(strip_tags($post->content));
+//            SEOMeta::setTitle($post->title);
+//            SEOMeta::setDescription(str_limit(strip_tags($post->body)));
+//            SEOMeta::addMeta('article:published_time', $post->created_at->toW3CString(), 'property');
+//            SEOMeta::addMeta('article:section', 'blog', 'property');
+//            SEOMeta::addKeyword(['key1', 'key2', 'key3']);
+
+            SEO::setTitle($post->title);
+            SEO::setDescription($description);
+            SEO::addImages(url('uploads/'.$post->thumb));
+            SEO::opengraph()->addProperty('type', 'articles');
+            SEO::metatags()->addMeta('article:published_time', $post->created_at->toW3CString());
+            SEO::metatags()->addMeta('article:section', 'blog');
+            if($post->previousPost()) SEO::metatags()->setPrev($post->previousPost()->getUrl());
+            if($post->nextPost()) SEO::metatags()->setNext($post->nextPost()->getUrl());
+
             return View('blog.post',array('title'=>$post['title'],'post'=>$post));
 	}
         

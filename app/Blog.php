@@ -11,6 +11,11 @@ class Blog extends \Eloquent {
         return \Config::get('app.url') .'/blog/' . $this->slug;
     }
 
+    public function getUrlAttribute()
+    {
+        return $this->getUrl();
+    }
+
     public function getThumbAttribute()
     {
         $nameArray = explode('.', $this->image);

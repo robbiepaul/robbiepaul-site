@@ -21,3 +21,7 @@ Route::post('newsletter', 'PagesController@postNewsletter');
 
 Route::get('/blog/{slug}', '\App\Http\Controllers\BlogController@getPost');
 Route::controller('/blog', '\App\Http\Controllers\BlogController');
+if (\Request::is('panel/Blog/*'))
+{
+    \Config::set('panel.controllers', '\App\Http\Controllers\panel');
+}
