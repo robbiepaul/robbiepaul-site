@@ -9,7 +9,7 @@
 
 
 
-    <article class="content post-content">
+    <article class="content post-content  col-md-8 col-md-offset-2">
         <div>{!! $post['content'] !!}</div>
 
     <section class="related">
