@@ -1,7 +1,7 @@
 @extends('layouts.inner')
 
 @section('head')
-  <link rel="stylesheet" type="text/css" href="css/grid/component.css" />
+
 @show
 
 @section('content')
@@ -21,13 +21,7 @@
     @include('footer')
 
 
-    <script src="js/libs/grid/modernizr.custom.js"></script>
-    <script src="js/libs/grid/build/imagesloaded.pkgd.min.js"></script>
-    <script src="js/libs/grid/masonry.pkgd.min.js"></script>
-    <script src="js/libs/grid/classie.js"></script>
-    <script src="js/libs/grid/cbpGridGallery.js"></script>
-    <script>
-            new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-    </script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
     
 @stop

@@ -26,7 +26,7 @@ elixir(function(mix) {
         'open-iconic-bootstrap.min.css',
         'awesome-bootstrap-checkbox.css',
         'ogrid.css',
-        'styles.css',
+        'styles.css'
 
     ], 'public/build/css/everything.css');
 
@@ -38,6 +38,7 @@ elixir(function(mix) {
         "modernizr.custom.js",
         "jquery.goup.min.js",
         "grid.js",
+        'highlight.pack.js',
         "site.js"
     ], 'public/build/js/everything.js');
 
