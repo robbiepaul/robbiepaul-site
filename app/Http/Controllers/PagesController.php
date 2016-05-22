@@ -10,6 +10,7 @@ class PagesController extends Controller {
 	public function index()
 	{
 		SEO::addImages(url('build/images/blank-project.png'));
+		SEO::opengraph()->addProperty('url', url()->current());
 
 		$last = \App\Blog::lastPosts(2);
 		return view('pages.home', compact('last'));
@@ -22,6 +23,7 @@ class PagesController extends Controller {
 		SEO::setTitle('About me');
 		SEO::setDescription('I\'m a '.$age.' year old full stack web developer based in London, England');
 		SEO::addImages(url('build/images/me_beach.jpg'));
+		SEO::opengraph()->addProperty('url', url()->current());
 		SEO::opengraph()->addProperty('type', 'website');
 
         return view('pages.about', compact('age'));
@@ -32,6 +34,7 @@ class PagesController extends Controller {
 		SEO::setTitle('Skills');
 		SEO::setDescription('Always learning and improving');
 		SEO::addImages(url('build/images/slide4.jpg'));
+		SEO::opengraph()->addProperty('url', url()->current());
 		SEO::opengraph()->addProperty('type', 'website');
 
 		return view('pages.skills');
@@ -42,6 +45,7 @@ class PagesController extends Controller {
 		SEO::setTitle('Projects');
 		SEO::setDescription('Past and present projects I\'ve worked on');
 		SEO::addImages(url('build/images/desk1.jpg'));
+		SEO::opengraph()->addProperty('url', url()->current());
 		SEO::opengraph()->addProperty('type', 'website');
 
 		return view('pages.projects');
@@ -52,6 +56,7 @@ class PagesController extends Controller {
 		SEO::setTitle('Contact me');
 		SEO::setDescription('Get in touch, it would be nice to hear from you');
 		SEO::addImages(url('build/images/slide5.jpg'));
+		SEO::opengraph()->addProperty('url', url()->current());
 		SEO::opengraph()->addProperty('type', 'website');
 
 		return view('pages.contact');

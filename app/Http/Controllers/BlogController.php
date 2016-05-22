@@ -53,13 +53,15 @@ class BlogController extends BaseController {
             if($post == NULL){
                 App::abort(404);
             }
-            $description = str_limit(strip_tags($post->html));
+
 
             SEO::setTitle($post->title);
-            SEO::setDescription($description);
+            SEO::setDescription($post->getDescription(160));
             SEO::addImages(url('uploads/'.$post->thumb));
             SEO::opengraph()->addProperty('type', 'article');
             SEO::opengraph()->addProperty('url', $post->getUrl());
+            SEO::opengraph()->setDescription($post->getDescription(300));
+            SEO::twitter()->setDescription($post->getDescription(300));
             SEO::metatags()->addMeta('article:published_time', $post->created_at->toW3CString());
             SEO::metatags()->addMeta('article:section', 'blog');
             if($post->previousPost()) SEO::metatags()->setPrev($post->previousPost()->getUrl());

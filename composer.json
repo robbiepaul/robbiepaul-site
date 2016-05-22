@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "serverfireteam/blog": "^2.0",
+        "serverfireteam/blog": "2.0",
         "adamwathan/bootforms": "^0.8.0",
         "bogardo/mailgun": "4.0.*",
         "pda/pheanstalk": "^3.1",

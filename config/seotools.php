@@ -31,7 +31,7 @@ return [
         'defaults' => [
             'title'        => false, // set false to total remove
             'description'  => false, // set false to total remove
-            'url'         => 'https://robbiepaul.co',
+            'url'         => false,
             'type'        => 'website',
             'site_name'   => 'Robbie Paul',
             'images'      => [],

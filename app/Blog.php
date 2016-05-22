@@ -21,6 +21,24 @@ class Blog extends \Eloquent {
         return \Markdown::text($this->content);
     }
 
+    public function getDescription($length = 300)
+    {
+        $html = $this->html;
+        $text = preg_replace('|\<h2.*\>(.*\n*)\</h2\>|isU', '', $html);
+        $text = strip_tags(preg_replace('|\<h3.*\>(.*\n*)\</h3\>|isU', '', $text));
+        $textArray = explode('. ', $text);
+        $description = '';
+        foreach($textArray as $sentence) {
+            $description .= $sentence.'. ';
+            if(strlen($description) > ($length-2)) {
+                $description = str_replace($sentence.'. ', '', $description);
+                break;
+            }
+        }
+        return empty($description) ? str_limit(trim($text), 160) : trim($description);
+
+    }
+
     public function getThumbAttribute()
     {
         $nameArray = explode('.', $this->image);
