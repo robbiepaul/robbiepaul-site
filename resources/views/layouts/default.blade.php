@@ -110,6 +110,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <script type="text/javascript" src="/build/js/everything.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
