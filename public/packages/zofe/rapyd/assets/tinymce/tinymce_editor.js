@@ -1,7 +1,7 @@
 var editor_config = {
     path_absolute : '',
-	language : 'es',
-    // selector: "textarea",
+	language : 'en',
+    selector: "#content",
     theme: "modern",
     plugins: [
         "advlist autolink lists link image charmap print preview hr anchor pagebreak",
@@ -48,3 +48,22 @@ var editor_config = {
 
         }
 };
+tinymce.init({
+    convert_urls: false,
+    language : 'en',
+    selector: "#content",
+    theme: "modern",
+    plugins: [
+    "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+    "searchreplace wordcount visualblocks visualchars code fullscreen",
+    "insertdatetime media nonbreaking save table contextmenu directionality",
+    "emoticons template paste textcolor colorpicker textpattern"
+],
+    toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+    toolbar2: "print preview media | forecolor backcolor emoticons",
+    image_advtab: true,
+    image_class_list: [
+    {title: 'None', value: ''},
+    {title: 'Image Responsive', value: 'img-responsive'}
+]
+});

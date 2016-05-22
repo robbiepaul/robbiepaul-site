@@ -11,7 +11,7 @@ return [
     */
     'data_edit' => [
         'button_position' => [
-            'save' => 'BL', // BR = Bottom Right, BL = Bottom Left, TL, TR
+            'save' => 'BR', // BR = Bottom Right, BL = Bottom Left, TL, TR
             'show' => 'TR',
             'modify' => 'TR',
             'undo' => 'TR',
@@ -51,7 +51,15 @@ return [
 	|--------------------------------------------------------------------------
 	*/
 	'tinymce' => [
-		'language' => false // Could be any value equal to filename from folder `public\assets\tinymce\langs` (ex. 'en_GB') or `false`
+		'language' => false, // Could be any value equal to filename from folder `public\assets\tinymce\langs` (ex. 'en_GB') or `false`
+        'plugins' => [
+            "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+            "searchreplace wordcount visualblocks visualchars code fullscreen",
+            "insertdatetime media nonbreaking save table contextmenu directionality",
+            "emoticons template paste textcolor colorpicker textpattern"
+        ],
+        "toolbar1" => ["insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"],
+        "toolbar2" => ["print preview media | forecolor backcolor emoticons"]
 	]
 
 ];
