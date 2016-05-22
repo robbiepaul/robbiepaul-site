@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa50bf0d-73c7-4e1b-ac83-12b127b6376a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/post.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/post.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/css/styles.css" afterPath="$PROJECT_DIR$/resources/assets/css/styles.css" />
     </list>
     <ignored path="robbiepaul.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="true" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.597561">
-              <caret line="462" column="13" selection-start-line="462" selection-start-column="13" selection-end-line="462" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.35287082">
+              <caret line="594" column="4" selection-start-line="594" selection-start-column="4" selection-end-line="595" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -88,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/blog/post.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13340807">
+            <state vertical-scroll-proportion="-4.576923">
               <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
               <folding>
                 <marker date="1463931285562" expanded="true" signature="56:280" placeholder="..." />
@@ -185,13 +185,13 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/carousel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/resources/views/pages/projects.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/grid.js" />
         <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/favicon.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blog/post.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/css/styles.css" />
       </list>
     </option>
   </component>
@@ -1137,14 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.597561">
-          <caret line="462" column="13" selection-start-line="462" selection-start-column="13" selection-end-line="462" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/carousel.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
@@ -1225,11 +1217,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/blog/post.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13340807">
+        <state vertical-scroll-proportion="-4.576923">
           <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           <folding>
             <marker date="1463931285562" expanded="true" signature="56:280" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35287082">
+          <caret line="594" column="4" selection-start-line="594" selection-start-column="4" selection-end-line="595" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
