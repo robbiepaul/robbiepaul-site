@@ -51,8 +51,10 @@ var editor_config = {
 tinymce.init({
     convert_urls: false,
     language : 'en',
+    height : 900,
     selector: "#content",
     theme: "modern",
+    content_css : '/build/css/everything.css',
     plugins: [
     "advlist autolink lists link image charmap print preview hr anchor pagebreak",
     "searchreplace wordcount visualblocks visualchars code fullscreen",
