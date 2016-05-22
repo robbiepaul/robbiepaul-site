@@ -23,8 +23,10 @@ class BlogController extends BaseController {
             SEO::setDescription('Tips and tutorials how to improve your web dev skills');
             SEO::addImages(url('build/images/desk3.jpg'));
             SEO::opengraph()->addProperty('type', 'articles');
+            SEO::opengraph()->addProperty('url', url()->current());
 
-            return View('blog.index',array('title'=>"Welcome ",'mostRecommended'=>$mostRecommended,'last'=>$last));
+
+        return View('blog.index',array('title'=>"Welcome ",'mostRecommended'=>$mostRecommended,'last'=>$last));
 	}
 
     public static function seoUrl($string) {
@@ -56,7 +58,8 @@ class BlogController extends BaseController {
             SEO::setTitle($post->title);
             SEO::setDescription($description);
             SEO::addImages(url('uploads/'.$post->thumb));
-            SEO::opengraph()->addProperty('type', 'articles');
+            SEO::opengraph()->addProperty('type', 'article');
+            SEO::opengraph()->addProperty('url', $post->getUrl());
             SEO::metatags()->addMeta('article:published_time', $post->created_at->toW3CString());
             SEO::metatags()->addMeta('article:section', 'blog');
             if($post->previousPost()) SEO::metatags()->setPrev($post->previousPost()->getUrl());
