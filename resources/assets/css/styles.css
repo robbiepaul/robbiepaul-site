@@ -784,6 +784,7 @@ article pre {
   margin: 1em 0px 1em !important;
   font-size:1em !important;
   padding: 0 !important;
+  border: none !important;
 }
 
 .form-control:focus {
