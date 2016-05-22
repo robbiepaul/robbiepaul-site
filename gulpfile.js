@@ -26,6 +26,7 @@ elixir(function(mix) {
         'open-iconic-bootstrap.min.css',
         'awesome-bootstrap-checkbox.css',
         'ogrid.css',
+        'railscasts.css',
         'styles.css'
 
     ], 'public/build/css/everything.css');
