@@ -780,6 +780,11 @@ label.required:after {
   box-shadow: none;
 }
 
+article pre {
+  margin: 1em 0px 1em;
+  font-size:1em;
+}
+
 .form-control:focus {
   border-color: #8AB7DB;
   -webkit-box-shadow: none;
