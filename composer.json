@@ -11,7 +11,9 @@
         "adamwathan/bootforms": "^0.8.0",
         "bogardo/mailgun": "4.0.*",
         "pda/pheanstalk": "^3.1",
-        "artesaos/seotools": "^0.9.2"
+        "artesaos/seotools": "^0.9.2",
+        "RobBrazier/Piwik": "^2.1",
+        "intervention/image": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

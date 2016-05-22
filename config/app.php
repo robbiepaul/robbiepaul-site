@@ -160,7 +160,8 @@ return [
         'AdamWathan\BootForms\BootFormsServiceProvider',
         Bogardo\Mailgun\MailgunServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
-
+        'RobBrazier\Piwik\PiwikServiceProvider',
+        Intervention\Image\ImageServiceProvider::class
     ],
 
     /*
@@ -209,7 +210,8 @@ return [
         'BootForm' => 'AdamWathan\BootForms\Facades\BootForm',
         'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class,
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
-
+        'Piwik' => 'RobBrazier\Piwik\Facades\Piwik',
+        'Image' => Intervention\Image\Facades\Image::class
     ],
 
 ];

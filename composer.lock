@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "150054c12ee6ef9893ccde84a6a6bce6",
-    "content-hash": "0af679d0db52b2a744dc1e7f19998b3f",
+    "hash": "82bb704aff0b6489a7164b3f0fce4bca",
+    "content-hash": "4c2b90572531d801adee376c490863b6",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1916,6 +1916,50 @@
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
             "time": "2016-05-03 17:50:52"
+        },
+        {
+            "name": "robbrazier/piwik",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobBrazier/Laravel_Piwik.git",
+                "reference": "c8ef374ea1951299f89899254476b9fe37a81b94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobBrazier/Laravel_Piwik/zipball/c8ef374ea1951299f89899254476b9fe37a81b94",
+                "reference": "c8ef374ea1951299f89899254476b9fe37a81b94",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.0.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "RobBrazier\\Piwik": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Brazier",
+                    "email": "rob.brazier@me.com"
+                }
+            ],
+            "description": "Piwik Package for Laravel",
+            "keywords": [
+                "laravel",
+                "piwik"
+            ],
+            "time": "2015-12-09 20:08:19"
         },
         {
             "name": "serverfireteam/blog",

@@ -19,5 +19,5 @@ Route::get('contact', 'PagesController@contact');
 Route::post('contact', 'PagesController@postContact');
 Route::post('newsletter', 'PagesController@postNewsletter');
 
-Route::get('/blog/{id}/{title}', '\App\Http\Controllers\BlogController@getPost');
+Route::get('/blog/{slug}', '\App\Http\Controllers\BlogController@getPost');
 Route::controller('/blog', '\App\Http\Controllers\BlogController');

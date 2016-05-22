@@ -10,16 +10,16 @@
         @foreach($last as $post)
             <article class="row blog-post">
                 <div class="col-lg-4">
-                    <a href="{{ url('/blog/'.$post['id'].'/'.str_slug($post['title'])) }}">
-                        <img src="uploads/{{$post['image']}}" alt="{{$post['title']}} " class="img-rounded img-responsive" />
+                    <a href="{{ $post->getUrl() }}">
+                        <img src="/uploads/{{$post['thumb']}}" alt="{{$post['title']}} " class="img-rounded img-responsive" />
                     </a>
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="featurette-heading"><a href="{{ url('/blog/'.$post['id'].'/'.str_slug($post['title'])) }}">{{$post['title']}}</a></h2>
+                    <h2 class="featurette-heading"><a href="{{ $post->getUrl() }}">{{$post['title']}}</a></h2>
                     <h3 class="date-posted"><span class="text-muted">Posted on</span> {{ $post['created_at']->format('jS F Y') }}</h3>
                     <p>{{str_limit(strip_tags($post['content']), 300)}}</p>
                     <p>
-                        <a href="{{ url('/blog/'.$post['id'].'/'.str_slug($post['title'])) }}" class="read-more">Read more</a>
+                        <a href=" {{ $post->getUrl()  }}" class="read-more">Read more</a>
                     </p>
                 </div>
                 <hr class="featurette-divider">

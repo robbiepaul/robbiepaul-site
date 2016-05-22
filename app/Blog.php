@@ -3,10 +3,19 @@
 class Blog extends \Eloquent {
     //put your code here
     protected  $table = 'blog';
-    
-    // return url of blog post 
+
+    protected $guarded = ['id'];
+
+
     function getUrl(){
-        return \Config::get('app.url') .'/blog/'. $this->id . '/' . str_slug($this->title);
+        return \Config::get('app.url') .'/blog/' . $this->slug;
+    }
+
+    public function getThumbAttribute()
+    {
+        $nameArray = explode('.', $this->image);
+        $ext = array_pop($nameArray);
+        return implode('.', $nameArray).'_thumb.'.$ext;
     }
     
     public static  function mostRecommended(){

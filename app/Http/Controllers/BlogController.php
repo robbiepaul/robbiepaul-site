@@ -38,9 +38,9 @@ class BlogController extends BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function getPost($id)
+	public function getPost($slug)
 	{
-            $post = \App\Blog::find($id);
+            $post = \App\Blog::whereSlug($slug)->first();
             if($post == NULL){
                 App::abort(404);
             }
