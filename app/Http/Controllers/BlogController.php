@@ -19,6 +19,11 @@ class BlogController extends BaseController {
             $mostRecommended = \App\Blog::mostRecommended();
             $last            = \App\Blog::lastPosts(4);
 
+            SEO::setTitle('Latest blog posts');
+            SEO::setDescription('Tips and tutorials how to improve your web dev skills');
+            SEO::addImages(url('build/images/desk3.jpg'));
+            SEO::opengraph()->addProperty('type', 'articles');
+
             return View('blog.index',array('title'=>"Welcome ",'mostRecommended'=>$mostRecommended,'last'=>$last));
 	}
 
@@ -47,11 +52,6 @@ class BlogController extends BaseController {
                 App::abort(404);
             }
             $description = str_limit(strip_tags($post->content));
-//            SEOMeta::setTitle($post->title);
-//            SEOMeta::setDescription(str_limit(strip_tags($post->body)));
-//            SEOMeta::addMeta('article:published_time', $post->created_at->toW3CString(), 'property');
-//            SEOMeta::addMeta('article:section', 'blog', 'property');
-//            SEOMeta::addKeyword(['key1', 'key2', 'key3']);
 
             SEO::setTitle($post->title);
             SEO::setDescription($description);

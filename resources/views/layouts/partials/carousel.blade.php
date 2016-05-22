@@ -12,4 +12,4 @@
     </div>
   </div>
 </div>
-<div id="mainDivider"></div>
+{{--<div id="mainDivider"></div>--}}

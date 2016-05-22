@@ -216,6 +216,16 @@ var Grid = (function() {
 			// initialize some events
 			initEvents($items);
 
+
+			if($items.length) {
+				setTimeout(function(){
+					var hash = window.location.hash.replace('#', '');
+					if(hash.length > 1) {
+						$('a[name='+hash+']').trigger('click');
+					}
+				}, 1000);
+			}
+
 		} );
 
 	}

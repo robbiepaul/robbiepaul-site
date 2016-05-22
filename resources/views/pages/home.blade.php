@@ -28,6 +28,44 @@
       {{--</div>--}}
 
       {{--</div>--}}
+    <div class="marketing">
+
+      <div class="" id="marketingPoints">
+          <div class=" container">
+              <h1 class="section-title">Recent projects</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="/projects#pagemeta" class="box">
+                      <img src="/build/images/projects/pagemeta-thumb.png" alt="PageMeta API" class="img-responsive img-rounded">
+                      <h2 class="text-center">PageMeta API</h2>
+                    </a>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-md-4">
+                    <a href="/projects#cloudconvert-laravel" class="box">
+                        <img src="/build/images/projects/cloudconvert-laravel-thumb.png" alt="CloudConvert Laravel" class="img-responsive img-rounded">
+                        <h2 class="text-center">CloudConvert Laravel</h2>
+                    </a>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-md-4">
+                    <a href="/projects#morethanabusinesscard" class="box">
+                        <img src="/build/images/projects/morethanabusinesscard-thumb.png" alt="More than a business card" class="img-responsive img-rounded">
+                        <h2 class="text-center">More than a business card</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                  <p class="pjax">
+                      <a href="/projects" class="see-more">View all projects</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
+      </div>
 
 
       <div class="container">

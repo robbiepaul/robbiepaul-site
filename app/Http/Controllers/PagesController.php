@@ -9,6 +9,7 @@ class PagesController extends Controller {
 
 	public function index()
 	{
+		SEO::addImages(url('build/images/blank-project.png'));
 
 		$last = \App\Blog::lastPosts(2);
 		return view('pages.home', compact('last'));
@@ -18,21 +19,41 @@ class PagesController extends Controller {
 	{
 		$age = Carbon::createFromDate(1983, 8, 11, 'GMT')->age;
 
+		SEO::setTitle('About me');
+		SEO::setDescription('I\'m a '.$age.' year old full stack web developer based in London, England');
+		SEO::addImages(url('build/images/me_beach.jpg'));
+		SEO::opengraph()->addProperty('type', 'website');
+
         return view('pages.about', compact('age'));
 	}
 
 	public function skills()
 	{
+		SEO::setTitle('Skills');
+		SEO::setDescription('Always learning and improving');
+		SEO::addImages(url('build/images/slide4.jpg'));
+		SEO::opengraph()->addProperty('type', 'website');
+
 		return view('pages.skills');
 	}
 
 	public function projects()
 	{
+		SEO::setTitle('Projects');
+		SEO::setDescription('Past and present projects I\'ve worked on');
+		SEO::addImages(url('build/images/desk1.jpg'));
+		SEO::opengraph()->addProperty('type', 'website');
+
 		return view('pages.projects');
 	}
 
 	public function contact()
 	{
+		SEO::setTitle('Contact me');
+		SEO::setDescription('Get in touch, it would be nice to hear from you');
+		SEO::addImages(url('build/images/slide5.jpg'));
+		SEO::opengraph()->addProperty('type', 'website');
+
 		return view('pages.contact');
 	}
 
