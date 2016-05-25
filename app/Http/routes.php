@@ -25,3 +25,7 @@ if (\Request::is('panel/Blog/*'))
 {
     \Config::set('panel.controllers', '\App\Http\Controllers\panel');
 }
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+Route::resource('post', 'PostController');
