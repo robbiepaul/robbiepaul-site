@@ -30,15 +30,17 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/convert', function(){
-    CloudConvert::file(public_path('robots.txt'))
+    $cc = CloudConvert::file(public_path('robots.txt'))
         ->callback(url('/callback'))
         ->convert('pdf');
+    dd($cc);
 
 });
 
-Route::get('/callback', function(){
-    CloudConvert::useProcess($_REQUEST['url'])
+Route::post('/callback', function(){
+    $cc = CloudConvert::useProcess($_REQUEST['url'])
         ->save(public_path('robots.pdf'));
+    dd($cc);
 });
 
 Route::resource('post', 'PostController');
