@@ -162,7 +162,8 @@ return [
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         'RobBrazier\Piwik\PiwikServiceProvider',
         Intervention\Image\ImageServiceProvider::class,
-        DraperStudio\Parsedown\ServiceProvider::class
+        DraperStudio\Parsedown\ServiceProvider::class,
+        RobbieP\CloudConvertLaravel\CloudConvertLaravelServiceProvider::class
     ],
 
     /*

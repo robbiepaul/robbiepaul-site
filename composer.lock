@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e64f5dbe76a622a8f487a428e43c4f1c",
-    "content-hash": "0170f9d0ea684f811a119c1689277fe4",
+    "hash": "346c028ab5798a168dd846dbd8dd51b5",
+    "content-hash": "bb8553a89c47c06e5caca7b655d40a80",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1658,6 +1658,57 @@
             "time": "2016-03-18 20:34:03"
         },
         {
+            "name": "patchwork/utf8",
+            "version": "v1.1.31",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tchwork/utf8.git",
+                "reference": "84da29ef77c422d83126534cb5bb03ba6e20f319"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/84da29ef77c422d83126534cb5bb03ba6e20f319",
+                "reference": "84da29ef77c422d83126534cb5bb03ba6e20f319",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": ">=7.3",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-iconv": "Use iconv for best performance",
+                "ext-intl": "Use Intl for best performance",
+                "ext-mbstring": "Use Mbstring for best performance"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Patchwork": "class/",
+                    "Normalizer": "class/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
+            "homepage": "https://github.com/tchwork/utf8",
+            "keywords": [
+                "grapheme",
+                "i18n",
+                "unicode",
+                "utf-8",
+                "utf8"
+            ],
+            "time": "2015-12-15 15:29:47"
+        },
+        {
             "name": "pda/pheanstalk",
             "version": "v3.1.0",
             "source": {
@@ -2012,6 +2063,60 @@
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
             "time": "2016-05-03 17:50:52"
+        },
+        {
+            "name": "robbiep/cloudconvert-laravel",
+            "version": "v2.2.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robbiepaul/cloudconvert-laravel.git",
+                "reference": "1d61b7bc45ddcff16ae789fb162ac6ec5fae53c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robbiepaul/cloudconvert-laravel/zipball/1d61b7bc45ddcff16ae789fb162ac6ec5fae53c3",
+                "reference": "1d61b7bc45ddcff16ae789fb162ac6ec5fae53c3",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~5.0|~6.0",
+                "illuminate/filesystem": "^5.0",
+                "illuminate/support": "^5.0",
+                "patchwork/utf8": "1.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*@dev",
+                "phpunit/phpunit": "4.3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "RobbieP\\CloudConvertLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robbie Paul",
+                    "email": "robbiepaul@me.com"
+                }
+            ],
+            "description": "A Laravel wrapper for the CloudConvert API",
+            "keywords": [
+                "cloudconvert",
+                "conversion",
+                "documents",
+                "laravel",
+                "laravel4",
+                "laravel5",
+                "office",
+                "screenshot"
+            ],
+            "time": "2016-05-26 14:37:37"
         },
         {
             "name": "robbrazier/piwik",

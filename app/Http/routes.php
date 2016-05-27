@@ -28,4 +28,18 @@ if (\Request::is('panel/Blog/*'))
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/convert', function(){
+    CloudConvert::file(public_path('robots.txt'))
+        ->callback(url('/callback'))
+        ->convert('pdf');
+
+});
+
+Route::get('/callback', function(){
+    CloudConvert::useProcess($_REQUEST['url'])
+        ->save(public_path('robots.pdf'));
+});
+
 Route::resource('post', 'PostController');
+
