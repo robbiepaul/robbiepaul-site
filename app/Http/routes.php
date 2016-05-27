@@ -37,7 +37,7 @@ Route::get('/convert', function(){
 
 });
 
-Route::post('/callback', function(){
+Route::get('/callback', function(){
     $cc = CloudConvert::useProcess($_REQUEST['url'])
         ->save(public_path('robots.pdf'));
     dd($cc);
