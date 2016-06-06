@@ -1,7 +1,7 @@
 @extends('blog.master')
 
 @section('body')
-    @include('layouts.partials.carousel', ['title' => "<small class='recommended-post'>Recommended Post</small><br><a href='".url('/blog/'.$mostRecommended['id'].'/'.str_slug($mostRecommended['title']))."'>".$mostRecommended['title']."</a>", 'tagline' => str_limit(strip_tags($mostRecommended['content']), 170). "<br/><a class='read-post' href='".url('/blog/'.$mostRecommended['id'].'/'.str_slug($mostRecommended['title']))."'>READ &raquo;</a>", 'image'=>'/uploads/'.$mostRecommended['image']])
+    @include('layouts.partials.carousel', ['title' => "<small class='recommended-post'>Recommended Post</small><br><a href='".url('/blog/'.$mostRecommended['id'].'/'.str_slug($mostRecommended['title']))."'>".$mostRecommended['title']."</a>", 'tagline' => str_limit(strip_tags($mostRecommended->getDescription(180)), 170). "<br/><a class='read-post' href='".url('/blog/'.$mostRecommended['id'].'/'.str_slug($mostRecommended['title']))."'>READ &raquo;</a>", 'image'=>'/uploads/'.$mostRecommended['image']])
 
 <div class="container index">
 

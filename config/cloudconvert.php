@@ -18,7 +18,7 @@ return array(
 	 * You can get it from: https://cloudconvert.org/user/profile
 	 */
 
-	'api_key' => 'xMtCa9PXsuhtx3LAWKxUhqfLonZVwOzzIakzLSXSXTbhHoUNDDHTGo2x4M25uPQjPWLcgHpWMhVsDkd8JY3qsA',
+	'api_key' => '',
 	's3' => [
 		'accesskeyid' => '',
 		'secretaccesskey' => '',
